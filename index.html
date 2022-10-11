@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детский сад</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <main class="main">
+        <header class="header">
+            <h1>Детский сад</h1>
+            <h2>Расчет стоимости</h2>
+        </header>
+        <article class="calc container">
+            <div class="calc__month">
+                <label for="month">Месяц</label>
+                <input id="month" type="month">
+            </div>
+            <div class="calc__oneDayCost">
+                <label for="oneDayCost">Стоимость 1 дня</label>
+                <input id="oneDayCost" type="number" class="readonly" readonly>
+            </div>
+            <div class="calc__FIO">
+                <label for="FIO">ФИО</label>
+                <input id="FIO" type="text">
+            </div>
+            <div class="calc__days">
+                <label for="days">Количество дней</label>
+                <input id="days" type="number">
+            </div>
+            <div class="calc__addOptions">
+                <label for="additional">Дополнительная услуга</label>
+                <select name="additional" id="additional">
+                    <option value="none"></option>
+                    <option value="ball">Веселый мяч</option>
+                    <option value="paint">Каляка-маляка</option>
+                    <option value="vocal">Вокал</option>
+                </select>
+            </div>
+            <div class="calc__buttons">
+                <button class="calcBtn" id="calcBtn">Рассчитать</button>
+                <button class="clearBtn" id="clearBtn">Очистить</button>
+            </div>
+        </article>
+        <!-- </calc> -->
+        <article class="result container">
+            <label for="result">Сумма к оплате за месяц</label>
+            <input id="result" type="text" class="readonly" readonly>
+        </article>
+    </main>
+    <br>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+body {
+    font-family: 'Roboto', sans-serif;
+
+    background-color: #f8edeb;
+}
+
+.main {
+    background-color: #e8e8e4;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 10px 2px #a79f9e;
+
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding: 15px 60px 40px 60px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+}
+
+.readonly {
+    background-color: rgb(236, 236, 236);
+}
+
+.header {
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.header h1 {
+    text-align: center;
+    font-size: 44px;
+    font-weight: 400;
+}
+.header h2 {
+    width: 100%;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.calc {
+    width: 100%;
+
+    margin-bottom: 40px;
+}
+.calc div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+.calc div label {
+    font-size: 20px;
+    font-weight: 300;
+}
+.calc div input {
+    border: solid 1px #c0c0bb;
+    border-radius: 5px;
+
+    font-size: 20px;
+
+    width: 60%;
+    padding: 5px;
+}
+
+.calc__month {}
+
+.calc__oneDayCost {}
+
+.calc__FIO {}
+
+.calc__days {}
+
+.calc__addOptions select {
+    border: solid 1px #c0c0bb;
+    border-radius: 5px;
+
+    font-size: 20px;
+
+    width: 60%;
+    padding: 5px;
+}
+
+.calc__buttons {
+    margin-top: 40px;
+}
+.calc__buttons button {
+    background-color: #bad4c5;
+    border-radius: 5px;
+
+    font-size: 20px;
+
+    width: 46%;
+    padding: 10px;
+}
+
+.calcBtn {}
+
+.clearBtn {}
+
+.result {
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.2s;
+
+    line-height: 40px;
+}
+.result label {
+    font-size: 20px;
+    font-weight: 300;
+}
+.result input {
+    border: solid 1px #c0c0bb;
+    border-radius: 5px;
+
+    font-size: 20px;
+
+    width: 10%;
+    min-width: 80px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.is-visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+@media (max-width: 1024px) {
+    .calc__buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    .calc__buttons button {
+        width: 100%;
+        height: 50px;
+    }
+    .calc__buttons button:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 856px) {
+    .header {
+        text-align: center;
+    }
+    .calc div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .calc label {
+        margin-bottom: 5px;
+    }
+    .calc div input {
+        width: 100%;
+    }
+    .calc__addOptions select {
+        width: 100%;
+    }
+    .result {
+        display: flex;
+        flex-direction: column;
+    }
+    .result input {
+        margin: 0;
+    }
+}
+@media (max-width: 425px) {
+    .header {
+        margin-bottom: 40px;
+    }
+    .main {
+        padding: 15px 30px 40px 30px;
+    }   
+}
